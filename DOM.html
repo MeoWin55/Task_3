@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>119140011-Winda Sulistyani</title>
+  <style>
+    * { 
+      
+      margin: 5px;
+    }
+    html {
+      margin 0;
+      padding 0;
+    }
+    body {
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif ;
+      color: rgb(10, 10, 10);
+      font-size: 15px;
+      background-color: rgb(187, 187, 221);
+    }
+    
+  </style>
+</head>
+<body>
+  <h1 id="judul"> Winda Sulistyani</h1>
+  <h2>119140011</h2>
+
+  <div id="container">
+      <label for="font">Pilih Font:</label>
+		  <select name="font" id="font" onchange="font()">
+        <option value="Arial">Arial</option>
+        <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+        <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+        <option value="Sans-serif">Sans-serif</option>
+      </select>
+      <br>
+      <label for="Peran">Pilih Peran:</label>
+		  <select name="Peran" id="Peran" onchange="Peran()">
+			<option value="none">-Pilih Peran-</option>
+		   	<option value="Warga">Warga</option>
+		   	<option value="Werewolf">Werewolf</option>
+		   	<option value="Cenayang">Cenayang</option>
+		   	<option value="Detektif">Detektif</option>
+      </select>
+
+    <p id="Role"></p>
+    
+    <button type="button" onclick="Start()">Bermain</button>
+    <button type="button" onclick="Finish()">Batalkan</button>
+    <p id="Start">Game Akan Dimulai</p>
+  
+    <script src="Script.js"></script>
+</body>
+</html>
